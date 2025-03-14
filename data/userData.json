@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1741931001584",
+    "name": "Kholiii",
+    "email": "laxmankamath123@gmail.com",
+    "password": "$2b$10$vlQqH06Y3mghDPeK1Iu1BOEAJ3xjwHCsaHaRVguawfy7pwtGY5IYm",
+    "role": "guest"
+  },
+  {
+    "id": "1741931073681",
+    "name": "Kholiii",
+    "email": "laxmedwedweankamath123@gmail.com",
+    "password": "$2b$10$66PGiRp/b8ZEaWsB4ICoAO6HSvUB8oXHwF7n.a5HnHR77bkNTdA9W",
+    "role": "guest"
+  },
+  {
+    "id": "1741931088308",
+    "name": "Kholiii",
+    "email": "laaxmankamath123@gmail.com",
+    "password": "$2b$10$C26XUr8xlCUkDKNgu7xndevrf9mxCOuRWiM36jZ9V5eGnawHfOK5S",
+    "role": "guest"
+  },
+  {
+    "id": "1741931341875",
+    "name": "Kholiii",
+    "email": "laaaxmankamath123@gmail.com",
+    "password": "$2b$10$mzop80GkfOoG9r3eKPZH.uKnY4YSdC98lqRX6SJkb5WQD5snEHMbG",
+    "role": "guest"
+  },
+  {
+    "id": "1741931839064",
+    "name": "Kholiii",
+    "email": "delaxmankamath123@gmail.com",
+    "password": "VITU@Admin1234",
+    "role": "guest"
+  },
+  {
+    "id": "1741952259153",
+    "name": "cdfcv",
+    "email": "ladaxmankamath123@gmail.com",
+    "password": "VITU@Admin1234",
+    "role": "user"
+  },
+  {
+    "id": "1741952463410",
+    "name": "cdfcv",
+    "email": "qlaxmankamath123@gmail.com",
+    "password": "VITU@Admin1234",
+    "role": "user"
+  },
+  {
+    "id": "1741954150707",
+    "name": "Kholiii",
+    "email": "wlaxmankamath123@gmail.com",
+    "password": "VITU@Admin1234",
+    "role": "user"
+  }
+]
