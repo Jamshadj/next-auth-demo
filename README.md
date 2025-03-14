@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next.js Authentication with NextAuth.js
 
-## Getting Started
+This project implements authentication in a Next.js application using NextAuth.js with credentials-based authentication. It reads user data from a JSON file and verifies credentials before granting access.
 
-First, run the development server:
+🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+NextAuth.js Integration with credentials provider
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+JWT-based authentication for session management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Custom login page (/login)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+User data stored in a JSON file for quick prototyping
 
-## Learn More
+📌 Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+Next.js (App Router)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NextAuth.js (Authentication)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+TypeScript (Type safety)
 
-## Deploy on Vercel
+Tailwind CSS (Optional for styling)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Node.js File System (fs) for reading user data
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📂 Project Structure
+
+📦 project-root
+ ┣ 📂 app
+ ┃ ┣ 📂 api
+ ┃ ┃ ┗ 📂 auth
+ ┃ ┃ ┃ ┗ 📜 [...nextauth].ts  # NextAuth handler
+ ┃ ┣ 📜 layout.tsx           # Root layout
+ ┃ ┣ 📜 page.tsx             # Home page
+ ┣ 📂 data
+ ┃ ┗ 📜 userData.json        # User database
+ ┣ 📜 next.config.js         # Next.js configuration
+ ┣ 📜 README.md              # Documentation
+ ┗ 📜 package.json           # Project dependencies
+
+🛠 Setup & Installation
+
+1️⃣ Clone the repository
+
+git clone https://github.com/your-repo.git
+cd your-repo
+
+2️⃣ Install dependencies
+
+yarn install  # or npm install
+
+3️⃣ Run the development server
+
+yarn dev  # or npm run dev
+
+4️⃣ Open the application in the browser
+
+http://localhost:3000
+
+🔑 Authentication Flow
+
+Users enter their email and password on the /login page.
+
+Credentials are validated against userData.json.
+
+If valid, a JWT session is created.
+
+Authenticated users can access protected pages.
+
+🔐 Securing Passwords (IMPORTANT!)
+
+🚨 Warning: This project currently stores plaintext passwords in userData.json. For production, implement password hashing (bcrypt) and use a secure database.
+
+Example using bcrypt:
+
+import bcrypt from 'bcrypt';
+const hashedPassword = await bcrypt.hash(password, 10);
+const isValid = await bcrypt.compare(inputPassword, storedHashedPassword);
+
+📝 License
+
+This project is licensed under the MIT License.
+
+📞 Support
+
+For issues, feel free to open an issue or contribute via a pull request.
